@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+        <title>Consumindo API</title>
+    </head>
+    <body class="w100 flex column jus_center gap_1">
+        <header>
+            <nav>
+                <a href><h1>Consumindo API com JS</h1></a>
+                <div>
+                    <a href><abbr title="Sobre nós"><img
+                                src="https://img.icons8.com/?size=100&id=82801&format=png&color=000000"
+                                alt="Sobre nós"></abbr></a>
+                    <a href><abbr title="Acesso ao Github"><img
+                                src="https://img.icons8.com/?size=100&id=gMbCAcG9gMc5&format=png&color=000000"
+                                alt="Acesso ao Github"></abbr></a>
+                </div>
+            </nav>
+        </header>
+        <section class="container-sm">
+            <h1>Consulta o endereço pelo CEP</h1>
+            <p>digite o seu CEP e veja as consultas feitas pela API do
+                Viacep</p>
+            <article>
+                <form>
+                    <div class="mb-3">
+                        <label for="cep" class="form-label">Cep para
+                            consulta:</label>
+                        <input type="number" class="form-control">
+                        <div class="form-text"><img
+                                src="https://img.icons8.com/?size=100&id=82889&format=png&color=000000"
+                                alt>Informe apenas números!</div>
+                        <button type="submit"
+                            class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+                <div class="table-responsive">
+                    <table
+                        class="table table-sm table-striped table-hover table-bordered">
+                        <caption class="caption-top">Resultados da
+                            consulta</caption>
+                        <tr>
+                            <th scope="row">logradouro</th>
+                            <th id="logradouro">dsdsdsdsdsd</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">complemento</th>
+                            <th id="complemento"></th>
+                        </tr>
+                        <tr>
+                            <th scope="row">unidade</th>
+                            <th id="unidade"></th>
+                        </tr>
+                        <tr>
+                            <th scope="row">bairro</th>
+                            <th id="bairro"></th>
+                        </tr>
+                        <tr>
+                            <th scope="row">localidade</th>
+                            <th id="localidade"></th>
+                        </tr>
+                        <tr>
+                            <th scope="row">região</th>
+                            <th id="regiao"></th>
+                        </tr>
+                        <tr>
+                            <th scope="row">ddd</th>
+                            <th id="ddd"></th>
+                        </tr>
+                    </table>
+                </div>
+            </article>
+        </section>
+        <footer class="w100 flex column jus_center gap_1" id>
+            <h1 class="text-bg-dark h6">Desenvolvido por:</h1>
+            <ul class="list-group">
+                <li><a href="https://github.com/Anacromatico">Igor Gonçalves
+                        Bernardo</a></li>
+                <li><a href>Felipe dos Reis</a></li>
+                <li><a href>Luis Felipe Galan</a></li>
+                <li><a href>Pedro</a></li>
+            </ul>
+        </footer>
+        <!-- scripts -->
+        <script src="script.js"></script>
+        <script src="viacep.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+    </body>
+</html>
