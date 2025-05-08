@@ -11,7 +11,7 @@
   flex-direction: column;
 }
 .gap_1 {
-  gap: 1rem;
+  gap: 5rem;
 }
 footer {
   text-align: center;
@@ -19,6 +19,14 @@ footer {
 }
 .icon {
   width: 1.8rem;
+}
+body {
+  background-color: #ddd;
+}
+section {
+  gap: 3rem;
+  background-color: #fff;
+  border-radius: 10px;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
