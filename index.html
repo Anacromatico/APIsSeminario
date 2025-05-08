@@ -18,10 +18,10 @@
                 <div>
                     <a href><abbr title="Sobre nós"><img
                                 src="https://img.icons8.com/?size=100&id=82801&format=png&color=000000"
-                                alt="Sobre nós"></abbr></a>
+                                alt="Sobre nós" class="icon"></abbr></a>
                     <a href><abbr title="Acesso ao Github"><img
                                 src="https://img.icons8.com/?size=100&id=gMbCAcG9gMc5&format=png&color=000000"
-                                alt="Acesso ao Github"></abbr></a>
+                                alt="Acesso ao Github" class="icon"></abbr></a>
                 </div>
             </nav>
         </header>
@@ -34,12 +34,14 @@
                     <div class="mb-3">
                         <label for="cep" class="form-label">Cep para
                             consulta:</label>
-                        <input type="number" class="form-control">
+                        <input type="number" id="cep" name="cep" maxlength="9"
+                            placeholder="00000000"
+                            required class="form-control">
                         <div class="form-text"><img
                                 src="https://img.icons8.com/?size=100&id=82889&format=png&color=000000"
-                                alt>Informe apenas números!</div>
+                                alt class="icon">Informe apenas números!</div>
                         <button type="submit"
-                            class="btn btn-primary">Submit</button>
+                            class="btn btn-primary">Enviar</button>
                     </div>
                 </form>
                 <div class="table-responsive">
@@ -49,7 +51,7 @@
                             consulta</caption>
                         <tr>
                             <th scope="row">logradouro</th>
-                            <th id="logradouro">dsdsdsdsdsd</th>
+                            <th id="logradouro"></th>
                         </tr>
                         <tr>
                             <th scope="row">complemento</th>
