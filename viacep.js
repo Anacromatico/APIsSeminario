@@ -47,4 +47,10 @@ document.querySelector('form').addEventListener('submit', async (event) => {
 
 function exibirDadosCep(json) {
     document.getElementById("logradouro").innerHTML = json.logradouro;
+    document.getElementById("complemento").innerHTML = json.complemento;
+    document.getElementById("unidade").innerHTML = json.unidade;
+    document.getElementById("bairro").innerHTML = json.bairro;
+    document.getElementById("localidade").innerHTML = json.localidade;
+    document.getElementById("regiao").innerHTML = json.regiao;
+    document.getElementById("ddd").innerHTML = json.ddd;
 }
