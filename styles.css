@@ -28,6 +28,10 @@ section {
   background-color: #fff;
   border-radius: 10px;
 }
+#explicacao_codigo {
+  background-color: #1e1e1e;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
