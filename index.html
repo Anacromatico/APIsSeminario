@@ -14,17 +14,21 @@
     </head>
     <body class="w100 flex column jus_center gap_1">
         <header>
-            <nav>
-                <a href><h1>Consumindo API com JS</h1></a>
-                <div>
-                    <a href><abbr title="Sobre nós"><img
-                                src="https://img.icons8.com/?size=100&id=82801&format=png&color=000000"
-                                alt="Sobre nós" class="icon"></abbr></a>
-                    <a href><abbr title="Acesso ao Github"><img
-                                src="https://img.icons8.com/?size=100&id=gMbCAcG9gMc5&format=png&color=000000"
-                                alt="Acesso ao Github" class="icon"></abbr></a>
-                </div>
-            </nav>
+            <nav class="navbar navbar-dark bg-dark px-4">
+  <a class="navbar-brand text-white" href="#">
+    <h1 class="h4 m-0">Consumindo API com JS</h1>
+  </a>
+  <div class="d-flex gap-3">
+    <a href="#sobre" title="Sobre nós">
+      <img src="https://img.icons8.com/?size=100&id=82801&format=png&color=ffffff"
+           alt="Sobre nós" class="icon" width="30" height="30">
+    </a>
+    <a href="https://github.com/Anacromatico/APIsSeminario" title="Acesso ao Github">
+      <img src="https://img.icons8.com/?size=100&id=gMbCAcG9gMc5&format=png&color=ffffff"
+           alt="Acesso ao Github" class="icon" width="30" height="30">
+    </a>
+  </div>
+</nav>
         </header>
         <section class="container-sm">
             <div>
@@ -90,8 +94,7 @@
                 <p>Confira o códgio comentado por trás das consultas
                     realizadas</p>
             </div>
-            <div id="explicacao_codigo"> <pre><code class="language-js">
-// seleciona o formulário no html e dispara uma função assíncrona se o usuário der submit no formulário
+            <div id="explicacao_codigo" class="bg-dark"> <pre><code class="text-white bg-dark">// seleciona o formulário no html e dispara uma função assíncrona se o usuário der submit no formulário
 document.querySelector('form').addEventListener('submit', async (event) => {
     event.preventDefault();
     
@@ -140,8 +143,9 @@ document.querySelector('form').addEventListener('submit', async (event) => {
                 </code></pre>
             </div>
         </section>
-        <footer class="w100 flex column jus_center gap_1" id>
-            <h1 class="text-bg-dark h6">Desenvolvido por:</h1>
+        <footer class="w100 flex column jus_center gap_1" id="sobre">
+            <br/>
+            <h1 class="text-white h5">Desenvolvido por:</h1>
             <ul class="list-group">
                 <li><a href="https://github.com/Anacromatico">Igor Gonçalves
                         Bernardo</a></li>
